@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Trumpio",
+	"version": "1.0",
+	"description": "Replaces the text 'Donald Trump' with 'Wario'.",
+	"browser_action": {
+    "default_icon": "trumpio.png"
+  },
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
